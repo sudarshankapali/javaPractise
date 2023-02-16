@@ -2,13 +2,13 @@ import java.util.Scanner;
 public class Assignment2{
     public static void main(String[] arg){
 
+        // INPUT PROGRAM
         System.out.println("What is the total number of employees?: \n");
         Scanner employeesNum = new Scanner(System.in);
         int employeesNum1 = employeesNum.nextInt();
         System.out.println("\nWhat is the name of the supervisor?: \n");
         Scanner input = new Scanner(System.in);
-        String name = input.nextLine();
-        
+        String name = input.nextLine();        
         System.out.println("\nHow many times nuclear waste is reomved from the core: \n");
         Scanner waste = new Scanner(System.in);
         int newclearWaste = waste.nextInt();
@@ -18,6 +18,15 @@ public class Assignment2{
         Scanner scanner = new Scanner(System.in);
         System.out.println("\nIs the electric motor beign replaced every 18 days? select 'y' for yes and 'n' for no: \n");
         char c = scanner.next().charAt(0);
+        System.out.println("\nEnter the core temperature of neculear reactor in celsius?\n");
+        Scanner tem = new Scanner(System.in);
+
+        // CALCULALTION PROGRAM CELSIUS TO KELVIN
+        double temperature = tem.nextFloat();
+        double kelvin = 273.15;
+        double kelvinsum = temperature + kelvin;
+
+        //DISPLAY PROGRAM
         System.out.println("\n\n\n\tUpdate on Nuclear Reactor name: JX00-XC-HB1\n\t Location: East of Japan\n\n");
         System.out.println("The total number of employees are: "+employeesNum1);
         System.out.println("The name of the supervisor is : "+name);
@@ -32,6 +41,6 @@ public class Assignment2{
         else{
             System.out.println("Invalid input:");
         }
-        
+        System.out.println("The temperature in cecsius is:"+temperature+ "°C and temperature in Kelvin is "+kelvinsum+"K\n\n");
     }
 }
