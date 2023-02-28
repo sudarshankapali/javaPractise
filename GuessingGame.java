@@ -14,7 +14,7 @@ public class GuessingGame{
 
         //generate random input for computer side
         Random generateRandomNumber = new Random();
-        int computerInput =generateRandomNumber.nextInt(11);
+        int computerInput =generateRandomNumber.nextInt(10)+1;
         //System.out.println("Computer input ==> "+computerInput);
 
 
