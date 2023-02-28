@@ -1,4 +1,4 @@
-public class Shape {
+public  class Shape {
     public int width;
     public int heigth;
     boolean isGameOver;
