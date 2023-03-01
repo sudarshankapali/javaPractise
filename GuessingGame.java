@@ -14,7 +14,7 @@ public class GuessingGame{
 
         //generate random input for computer side
         Random generateRandomNumber = new Random();
-        int computerInput =generateRandomNumber.nextInt(10)+1;
+        int computerInput =(generateRandomNumber.nextInt(10))+1;
         //System.out.println("Computer input ==> "+computerInput);
 
 
@@ -26,6 +26,7 @@ public class GuessingGame{
                 System.out.println("You guessed correct number: ");
                 System.out.println("================================");
                 isGameOver = true;
+                break;
             }else if(userInput > computerInput){
                 chances -= i;
                 System.out.println("--------------------------------");
@@ -45,7 +46,7 @@ public class GuessingGame{
             }
             i++;
         }
-        if(i >= 5){
+        if(i > 5){
                 System.out.println("================================");
                 System.out.println("YOU LOST!!!");
                 System.out.println("================================");
