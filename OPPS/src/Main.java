@@ -18,12 +18,14 @@ public class Main {
 //        Main.display();
         //Person obj = new Person("sudarshan",22);
         //obj.introduce();
-        Triangle obj = new Triangle(3,4,5);
-        Average obj1 = new Average(2,2,2);
-        obj1.calculate();
-        Student obj2 = new Student();
-        obj2.name = "John";
-        obj2.roll_no = 2;
-        System.out.println("Name = "+obj2.name+" roll_no = "+obj2.roll_no);
+//        Triangle obj = new Triangle(3,4,5);
+//        Average obj1 = new Average(2,2,2);
+//        obj1.calculate();
+//        Student obj2 = new Student();
+//        obj2.name = "John";
+//        obj2.roll_no = 2;
+//        System.out.println("Name = "+obj2.name+" roll_no = "+obj2.roll_no);
+        Rectangle obj = new Rectangle();
+        obj.getArea();
     }
 }
