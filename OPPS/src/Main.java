@@ -27,5 +27,6 @@ public class Main {
 //        System.out.println("Name = "+obj2.name+" roll_no = "+obj2.roll_no);
         Rectangle obj = new Rectangle();
         obj.getArea();
+        obj.getColor();
     }
 }
