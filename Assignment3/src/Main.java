@@ -1,6 +1,7 @@
 import CurrencyConverter.CurrencyConverter;
 import Fibonacci.FibonacciSeries;
 import MultiplicationTable.Multiply;
+import Permuation.Permuation;
 
 
 public class Main {
@@ -15,7 +16,11 @@ public class Main {
 //        converter.convert();
 
         //Question number 3 ()
-        FibonacciSeries fibonacciSeries = new FibonacciSeries();
-        fibonacciSeries.fibo();
+//        FibonacciSeries fibonacciSeries = new FibonacciSeries();
+//        fibonacciSeries.fibo();
+
+        //Question number 5 (Permutation Question)
+//         Permuation permuation = new Permuation();
+//         permuation.premutationQuestion();
     }
 }

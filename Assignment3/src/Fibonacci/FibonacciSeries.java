@@ -17,14 +17,21 @@ public class FibonacciSeries {
         int a=0;
         int b=1;
         int c=0;
-        System.out.println(a);
-        System.out.println(b);
-        while(i-2!=0){
-            c = a + b;
-            a=b;
-            b=c;
-            i--;
-            System.out.println(c);
+
+        if(userInput == 1){
+            System.out.println(a);
+        } else if (userInput == 0) {
+            System.out.println("invalid input");
+        }else {
+            System.out.println(a);
+            System.out.println(b);
+            while(i-2!=0){
+                c = a + b;
+                a=b;
+                b=c;
+                i--;
+                System.out.println(c);
+            }
         }
     }
 }
