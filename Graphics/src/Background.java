@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class Background {
+import javax.swing.*;
+
+public class Background extends JPanel {
+
 }

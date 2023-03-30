@@ -1,8 +1,8 @@
 import javax.swing.*;
 
-public class Render {
+public class GameManager {
     JFrame frame = new JFrame();
-    Box box = new Box();
+    Player box = new Player();
     public void GUIrender(){
         frame.add(box);
         frame.setSize(400,400);
