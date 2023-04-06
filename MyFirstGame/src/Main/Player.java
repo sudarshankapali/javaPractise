@@ -5,31 +5,66 @@ import Inputs.MouseInputs;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Random;
 
 public class Player extends JPanel {
+//    GamePanel class
     private MouseInputs mouseInputs = new MouseInputs(this);
-    public int xDelta = 100,yDelta = 100;
+    public float xDelta = 100,yDelta = 100;
+    private int frames = 0;
+    private long lastCheck = 0;
+    private float xDir = 0.2f, yDir = 0.2f;
+    private Color color = new Color(50,20,70);
+    private Random random;
     public Player(){
+        random = new Random();
         addKeyListener(new KeyboardInputs(this));
         addMouseListener(mouseInputs);
         addMouseMotionListener(mouseInputs);
     }
     public void changeXdelta(int value){
         this.xDelta +=value;
-        repaint();
+//        repaint();
     }
     public void changeYdelta(int value){
         this.yDelta +=value;
-        repaint();
+//        repaint();
     }
     public void setRectPos(int x, int y){
         this.xDelta = x;
         this.yDelta = y;
-        repaint();
+//        repaint();
     }
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.fillRect(xDelta,yDelta,150,50);
+        updateRectangel();
+        g.setColor(color);
+        g.fillRect((int)xDelta,(int)yDelta,150,50);
+        frames++;
+        if(System.currentTimeMillis()- lastCheck >= 1000){
+            lastCheck = System.currentTimeMillis();
+            System.out.println("FPS "+frames);
+            frames=0;
+        }
+//        repaint();
+    }
+    private void updateRectangel(){
+        xDelta+= xDir;
+        if(xDelta>400 || xDelta<0){
+            xDir*= -1;
+            color = getRandomColor();
+        }
+        yDelta+=yDir;
+        if(yDelta>400 || yDelta <0){
+            yDir*= -1;
+            color = getRandomColor();
+        }
+    }
+    private Color getRandomColor(){
+        int r=random.nextInt(255);
+        int g =random.nextInt(255);
+        int b=random.nextInt(255);
+        return new Color(r,g,b);
     }
 }

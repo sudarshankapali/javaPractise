@@ -1,8 +1,11 @@
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.time.chrono.JapaneseDate;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Ui {
+public class Ui implements ActionListener {
+    DefaultTableModel tab = new DefaultTableModel();
     JFrame frame = new JFrame("Phonebook");
     JLabel label = new JLabel("Info");
     JLabel label1 = new JLabel("Name");
@@ -13,10 +16,15 @@ public class Ui {
     JTextField phone = new JTextField();
     JButton insert = new JButton("Insert");
     JButton reset = new JButton("Reset");
-    JTable table = new JTable();
+
+    JTable table= new JTable();
 
 
     public  Ui(){
+        tab.addColumn("Name");
+        tab.addColumn("Phone");
+        tab.addColumn("City");
+
         label.setBounds(10,1,50,20);
         label1.setBounds(60,20,50,20);
         label2.setBounds(60,40,50,20);
@@ -41,8 +49,18 @@ public class Ui {
         frame.add(insert);
         frame.add(reset);
 
-        table.addColumn(data,cloumn);
-        table.setBounds(30,40,200,200);
+//        String[][] data = {
+//                { "Ram", "Kathmandu", "9800000000" },
+//                { "Hari", "Kathmandu", "9800000000" }
+//        };
+//        String[] columnNames = { "Name", "City", "Phone" };
+        table.setModel(tab);
+//        table = new JTable(data, columnNames);
+        table.setBounds(60, 120, 350, 300);
+
+        JScrollPane pane= new JScrollPane(table);
+        pane
+//        JScrollPane sp = new JScrollPane(table);
 
         frame.add(table);
 
@@ -51,5 +69,10 @@ public class Ui {
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
     }
 }
