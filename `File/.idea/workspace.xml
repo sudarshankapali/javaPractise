@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="48bcdb8f-50f3-449a-a6a5-55d0a162666a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Assignment5/src/Process1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment5/src/Process2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment5/src/Syn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASSIGNMENT-5-B/out/production/ASSIGNMENT-5-B/CounterApp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASSIGNMENT-5-B/out/production/ASSIGNMENT-5-B/CounterApp$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASSIGNMENT-5-B/out/production/ASSIGNMENT-5-B/CounterApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sync/out/production/Sync/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sync/out/production/Sync/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sync/out/production/Sync/Process1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sync/out/production/Sync/Process1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sync/out/production/Sync/Process2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sync/out/production/Sync/Process2.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2OGeevdgkqB2SUbpy5YRoCuU5AC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Dell/Desktop/JAVA practise/CLASS"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48bcdb8f-50f3-449a-a6a5-55d0a162666a" name="Changes" comment="" />
+      <created>1681191444636</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681191444636</updated>
+    </task>
+    <servers />
+  </component>
+</project>
