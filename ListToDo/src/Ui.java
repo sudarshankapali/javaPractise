@@ -16,8 +16,8 @@ public class Ui implements ActionListener {
     JTextField phone = new JTextField();
     JButton insert = new JButton("Insert");
     JButton reset = new JButton("Reset");
-
-    JTable table= new JTable();
+    String[] columnName = {"Name","Age","Gender"};
+    String[] data = {"Sudarshan","22","male"};
 
 
     public  Ui(){
@@ -49,21 +49,9 @@ public class Ui implements ActionListener {
         frame.add(insert);
         frame.add(reset);
 
-//        String[][] data = {
-//                { "Ram", "Kathmandu", "9800000000" },
-//                { "Hari", "Kathmandu", "9800000000" }
-//        };
-//        String[] columnNames = { "Name", "City", "Phone" };
-        table.setModel(tab);
-//        table = new JTable(data, columnNames);
-        table.setBounds(60, 120, 350, 300);
-
-        JScrollPane pane= new JScrollPane(table);
-        pane
-//        JScrollPane sp = new JScrollPane(table);
-
+        JTable table = new JTable( data,columnName);
         frame.add(table);
-
+        
         frame.setLayout(null);
         frame.setSize(500,500);
         frame.setLocationRelativeTo(null);
