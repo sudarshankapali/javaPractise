@@ -17,13 +17,13 @@ public class Main {
 //        stm.executeUpdate("delete from new_table where id = 2");
 //        stm.executeUpdate("insert into new_table (Name,Address) values ('nirendra','basantapur')");
 //        stm.executeUpdate("insert into new_table (Name,Address) values ('rohan','kathmandu')");
-//prepaid statement
-        PreparedStatement preparedStatement = conn.prepareStatement("SELECT * FROM new_table WHERE id=?");
-        preparedStatement.setInt(1,3);
-        ResultSet resultSet = preparedStatement.executeQuery();
-        while (rs.next()){
-            String name = rs.getString("name");
-            System.out.println(name);
-        }
+////prepaid statement
+//        PreparedStatement preparedStatement = conn.prepareStatement("SELECT * FROM new_table WHERE id=?");
+//        preparedStatement.setInt(1,3);
+//        ResultSet resultSet = preparedStatement.executeQuery();
+//        while (rs.next()){
+//            String name = rs.getString("name");
+//            System.out.println(name);
+//        }
     }
 }
