@@ -7,22 +7,30 @@ public class CalculatorGUI implements ActionListener {
     JTextField t1 = new JTextField();
     JTextField t2 = new JTextField();
     JTextField t3 = new JTextField();
+    JLabel n1 = new JLabel("Number 1");
+    JLabel n2 = new JLabel("Number 2");
+    JLabel result = new JLabel("Sum");
 
 
     JButton btn = new JButton("add");
 
 
     void render(){
-        t1.setBounds(10,10,100,20);
+        n1.setBounds(0,10,70,20);
+        frame.add(n1);
+        n2.setBounds(0,30,70,20);
+        frame.add(n2);
+        t1.setBounds(70,10,100,20);
 //        t1.setText("Sudarshan");
         frame.add(t1);
         System.out.println(t1.getText());
 
-        t2.setBounds(10,30,100,20);
+        t2.setBounds(70,30,100,20);
 //        t2.setText("Sudarshan");
         frame.add(t2);
-
-        t3.setBounds(10,60,100,20);
+        result.setBounds(30,50,70,20);
+        frame.add(result);
+        t3.setBounds(70,50,100,20);
 //        t3.setText("Sudarshan");
         frame.add(t3);
 

@@ -5,13 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8a940d6-735b-4c87-a138-845a90656511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../newChatApplication/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../newChatApplication/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../newChatApplication/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../newChatApplication/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../newChatApplication/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../newChatApplication/newChatApplication.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../newChatApplication/src/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
