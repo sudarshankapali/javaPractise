@@ -17,15 +17,24 @@ public class GamePanel extends JPanel {
     private int frames = 0;
     private long lastCheck = 0;
     private float xDir = 0.9f,yDir = 0.9f;
-    private BufferedImage img,subImg;
+    private BufferedImage img;
+    private BufferedImage[] idleAni;
+    private int aniTick,aniIndex,aniSpeed=15;
 
     public GamePanel(){
         importImg();
+        loadAnimations();
         mouseInputs = new MouseInputs(this);
         setPanelSize();
         addKeyListener(new keyboardInputs(this));
         addMouseListener(mouseInputs);
         addMouseMotionListener(mouseInputs);
+    }
+
+    private void loadAnimations() {
+        idleAni = new BufferedImage[5];
+        for(int i=0;i<idleAni.length;i++)
+            idleAni[i] = img.getSubimage(i * 64, 0, 64, 40);
     }
 
     private void importImg() {
@@ -34,8 +43,14 @@ public class GamePanel extends JPanel {
             img = ImageIO.read(is);
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }finally {
+            try{
+                is.close();
+            }catch (Exception e) {
+                throw new RuntimeException(e);
+            }
         }
-    }
+        }
 
     private void setPanelSize() {
         Dimension size = new Dimension(1280,800);
@@ -58,8 +73,8 @@ this.yDelta = y;
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 //        g.drawImage(img.getSubimage(0,0,64,40),0,0,128,80,null);
-        subImg = img.getSubimage(1*64,8*40,64,40);
-        g.drawImage(subImg,(int)xDelta,(int)yDelta,128,80,null);
+        updateAnimationTick();
+        g.drawImage(idleAni[aniIndex],(int)xDelta,(int)yDelta,128,80,null);
         frames++;
                 if(System.currentTimeMillis() - lastCheck >= 1000){
                     lastCheck = System.currentTimeMillis();
@@ -67,6 +82,19 @@ this.yDelta = y;
                     frames=0;
                 }
 //        repaint();
+    }
+
+    private void updateAnimationTick() {
+        aniTick++;
+        if(aniTick >= aniSpeed){
+            aniTick = 0;
+            aniIndex++;
+            if(aniIndex >= idleAni.length){
+                aniIndex = 0;
+
+            }
+        }
+
     }
 
 }
