@@ -10,8 +10,10 @@ public class Main {
         Statement stm = conn.createStatement();
         ResultSet rs = stm.executeQuery("select * from new_table");
         while(rs.next()){
+            int id = rs.getInt("ID");
             String name = rs.getString("Name");
-            System.out.println(name);
+            String address = rs.getString("Address");
+            System.out.println(id+" "+name+" "+address);
         }
 //        stm.executeUpdate("update new_table set Name = 'Sudarshan kapali' where ID=1");
 //        stm.executeUpdate("delete from new_table where id = 2");
