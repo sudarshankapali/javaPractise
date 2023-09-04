@@ -5,18 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8a940d6-735b-4c87-a138-845a90656511" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../HashMap/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HashMap/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HashMap/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HashMap/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HashMap/HashMap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RMI/src/Client2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NewDatabase/out/production/NewDatabase/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NewDatabase/out/production/NewDatabase/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NewDatabase/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NewDatabase/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMI/out/production/RMI/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMI/out/production/RMI/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMI/out/production/RMI/HelloServant.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMI/out/production/RMI/HelloServant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMI/out/production/RMI/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMI/out/production/RMI/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMI/src/HelloServant.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMI/src/HelloServant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudarshan/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudarshan/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudarshan/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sudarshan/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Applet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Applet/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array_Vector/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Array_Vector/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array_Vector/out/production/Array_Vector/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Array_Vector/out/production/Array_Vector/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListToDo/out/production/ListToDo/Ui.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Looping/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Looping/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Notepad/sudarshan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Notepad/sudarshan.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sissor_Paper_Rock/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sissor_Paper_Rock/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sissor_Paper_Rock/out/production/Sissor_Paper_Rock/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Sissor_Paper_Rock/out/production/Sissor_Paper_Rock/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../`File/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../`File/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Dell/Desktop/JAVA practise/newChatApplication"
+    "last_opened_file_path": "C:/Users/Dell/Desktop/JAVA practise/ChatApplication"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

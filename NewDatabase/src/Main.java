@@ -15,6 +15,8 @@ public class Main {
             String address = rs.getString("Address");
             System.out.println(id+" "+name+" "+address);
         }
+
+
 //        stm.executeUpdate("update new_table set Name = 'Sudarshan kapali' where ID=1");
 //        stm.executeUpdate("delete from new_table where id = 2");
 //        stm.executeUpdate("insert into new_table (Name,Address) values ('nirendra','basantapur')");
